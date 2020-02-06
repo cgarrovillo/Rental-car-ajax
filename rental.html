@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dodgy Brakes - Rental</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="rental.css">
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="brake.png" alt="">
+        </figure>
+    </header>
+    <main>
+        <section id="clients">
+            <h1>Search for a Client</h1>
+            <div id="searchbarcont">
+                <input type="search" name="search" id="search">
+            </div>
+            <table id="clienttable">
+
+            </table>
+        </section>
+        <section id="rentalform">
+            <table id="clientinfo">
+                <span id="fullname"></span> <br>
+                <span id="address"></span> <br>
+                <span id="email"></span> <br>
+                <span id="phone"></span> <br>
+            </table>
+            <h1>Rent a Car</h1>
+            <form action="">
+                <div id="carselection">
+                    <label for="compact">
+                    <figure>
+                        <img src="aclass.jpg" alt="">
+                    </figure>Compact
+                    <input type="radio" name="cartype" id="compact" value="15" onchange="rent()">
+                </label>
+
+                <label for="midsize">
+                    <figure>
+                        <img src="4door.jpg" alt="">
+                    </figure>Mid-Size
+                    <input type="radio" name="cartype" id="midsize" value="20" onchange="rent()">
+                </label>
+
+                <label for="Luxury">
+                    <figure>
+                        <img src="wraith.jpg" alt="">
+                    </figure>Luxury
+                    <input type="radio" name="cartype" id="Luxury" value="35" onchange="rent()">
+                </label>
+
+                <label for="truck">
+                    <figure>
+                        <img src="6x6.jpg" alt="">
+                    </figure>Van/Truck
+                    <input type="radio" name="cartype" id="truck" value="40" onchange="rent()">
+                </label>
+            </div>
+
+            <h3>Options</h3>
+            <div id="optionscont">
+                <label for="rack">
+                    <span>$5/day | Roof Rack/Bicycle Rack</span>
+                    <input type="checkbox" name="rack" id="rack" value="5" onchange="rent()">
+                </label>
+
+                <label for="gps">
+                    <span>$10 | GPS</span>
+                    <input type="checkbox" name="gps" id="gps" value="10" onchange="rent()">
+                </label>
+            
+                <label for="seat">
+                    <span>Free | Child Booster Seat</span>
+                    <input type="checkbox" name="seat" id="seat" value="0" onchange="rent()">
+                </label>
+            </div>
+            
+            <div>
+                <label for="days">
+                    <span>Number of days to rent:</span>
+                    <input type="number" name="days" id="days" min="1" max="30" onchange="rent()">
+                </label>
+            </div>
+
+
+
+            </form>
+
+            <div>
+                <h3>Total:</h3>
+                <p>
+                    <span id="opttxt"></span>
+                </p>
+                <h1>
+                    <span id="total"></span>
+                </h1>
+            </div>
+        </section>
+
+
+    </main>
+</body>
+</html>

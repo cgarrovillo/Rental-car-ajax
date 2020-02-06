@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Google Sans', 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #242323;
+}
+
+header figure {
+    margin: 0;
+    padding: 15px 0 15px 0;
+}
+
+header img {
+    width: 50px;
+    text-align: center;
+
+}
+
+main {
+    background-color: #242323;
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+section {
+    margin: 20px 0 0 0 ;
+    background-color: white;
+    color: #242323;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+section > h1 {
+    color: #242323;
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#searchbarcont {
+    margin: 9;
+}
+
+#searchbarcont input {
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 0.5px solid #FFBD4A;
+}
+
+#clients {
+    min-height: 200px;
+}
+
+#rentalform {
+    visibility: hidden;
+    min-height: 650px;
+}
+
+#clientinfo {
+    margin: 20px;
+}
+
+#rentalform span {
+    font-size: 18px;
+}
+
+
+
+#carselection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+#carselection figure{
+    margin: 0;
+    padding: 0;
+}
+
+#carselection img {
+    width: 250px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+#carselection img:hover {
+    box-shadow: 0px 1px 17px 0px #000000;
+}
+
+#optionscont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 0 40px 0;
+}
