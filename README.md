@@ -1,6 +1,6 @@
 ## Rental-car-ajax
 
-### Simple mock Rental car web-app that utilizes AJAX technologies
+### Simple Rental car quote web-app for a mock rental company that utilizes AJAX technologies
 Part of CPRG-256 Web Development
 
 ### What I Learned:
